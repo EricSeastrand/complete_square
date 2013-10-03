@@ -1,0 +1,31 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+<script src="dependencies/selectBox/jquery.selectBox.min.js"></script>
+<link rel="stylesheet" href="dependencies/selectBox/jquery.selectBox.css" />
+<script src="scripts.js"></script>
+<style>
+	.polynomial-input input {
+		width: 60px;
+	}
+</style>
+<select class="tests-selection"><option disabled="disabled">--Select a test polynomial--</option></select>
+
+<div class="polynomial-input-wrapper">
+
+<form class="polynomial-input">
+<input type="text" class="polynomial-A"/>x<sup>2</sup>
+ + 
+<input type="text" class="polynomial-B" />x
+ + 
+<input type="text" class="polynomial-C">
+ = 0
+</div>
+
+<div class="option_output-fractions">
+	<label for="output-fractions">Output Fractions:</label>
+	<input type="checkbox" class="output-fractions" />
+</div>
+
+</form>
+<button class="solve-polynomial">Solve</button>
+
+<ol class="steps-printout"></ol>
